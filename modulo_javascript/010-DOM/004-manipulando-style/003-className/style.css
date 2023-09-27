@@ -1,0 +1,24 @@
+body {
+    font-family: Arial;
+    background: #eee;
+}
+
+.active {
+    font-family: sans-serif;
+    color: purple;
+}
+
+.blue-filter {
+    background-color: rgba(38, 38, 128, 0.301);
+    padding: 20px;
+}
+
+strong {
+    font-size: 15px;
+    color: navy;
+}
+
+strong:hover {
+    color: #aaa;
+    font-weight: bold;
+}
