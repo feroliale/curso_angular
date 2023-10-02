@@ -1,7 +1,12 @@
 "use strict";
 
-const strong = document.querySelector("strong");
-const p = document.querySelector(".paragrafo");
+const container = document.querySelector(".container");
 
-console.log(p.parentElement);
-console.log(p.parentNode);
+console.log(container.children); //HTMLCollection
+console.log(container.childNodes); //NodeList
+
+const children = Array.from(container.children);
+
+children.forEach((res) => {
+    console.log(res);
+});
