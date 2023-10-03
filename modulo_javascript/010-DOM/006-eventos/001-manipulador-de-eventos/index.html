@@ -13,13 +13,34 @@
 </head>
 
 <body>
-    <!--Não é aconselhável usar eventos inline -->
-    <button onclick="alert('Não é aconselhável utilizar eventos dessa maneira.')">Evento inline</button>
+    <h1>Landpage do conteúdo de eventos</h1>
 
-    <button class="onclick">Evento no script</button>
+    <div class="modulo-eventos">
 
-    <button class="event">Event Listener</button>
+        <h2>Listenners</h2>
 
+        <!--Não é aconselhável usar eventos inline -->
+        <button onclick="alert('Alerta Inline.')">Evento inline</button>
+
+        <button class="onclick">Event Onclick</button>
+
+        <button class="event">Event Listenner</button>
+
+        <button class="remove">Event Remove</button>
+        <hr />
+    </div>
+    <div class="preventing-default">
+
+        <h2>Eventos</h2>
+
+        <a href="http://google.com" target="_blank" rel="noopener noreferrer">Acesse o Google</a>
+
+        <ul id="menu">
+            <li class="home">Home</li>
+            <li class="sobre">Sobre</li>
+            <li class="contato">Contato</li>
+        </ul>
+    </div>
 </body>
 
 </html>
