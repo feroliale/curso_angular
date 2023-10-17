@@ -20,5 +20,5 @@ export namespace Pessoa {
     }
 }
 
-console.log(Pessoa.Joao.nome);
-console.log(Pessoa.Maria.calc());
+// console.log(Pessoa.Joao.nome);
+// console.log(Pessoa.Maria.calc());

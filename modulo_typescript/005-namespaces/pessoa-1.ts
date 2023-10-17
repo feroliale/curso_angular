@@ -8,6 +8,6 @@ export namespace Pessoa1 { // Define um escopo local para ser usado
     }
 }
 
-console.log(Pessoa1.nome);
-console.log(Pessoa1.calc());
+// console.log(Pessoa1.nome);
+// console.log(Pessoa1.calc());
 
