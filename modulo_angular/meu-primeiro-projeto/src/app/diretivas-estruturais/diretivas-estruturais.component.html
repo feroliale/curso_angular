@@ -1,1 +1,30 @@
-<p>diretivas-estruturais works!</p>
+<div>
+    <p *ngIf="condition; else elseBlock"
+        style="background-color: green; padding: 1%; font-weight: bolder; color: white;">
+        It's works!
+    </p>
+
+    <ng-template #elseBlock>
+        <p style="background-color: red; padding: 1%; font-weight: bolder; ">
+            Work in progress!
+        </p>
+    </ng-template>
+
+</div>
+
+<hr />
+
+<p *ngIf="conditionClick">
+    True
+</p>
+
+<p *ngIf="!conditionClick">
+    False
+</p>
+
+<button (click)="onClick()">Clicar</button>
+
+<br />
+<br />
+
+<hr />
