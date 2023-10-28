@@ -17,6 +17,11 @@ export class DiretivasEstruturaisComponent {
     { nome: "Daniel", idade: 40 },
   ];
 
+  public nomeLista: string = 'Edgar';
+  public idadeLista: number = 50;
+
+  public nome: string = 'joão';
+
   ngOnInit(): void {
 
     setInterval(() => {
@@ -36,8 +41,8 @@ export class DiretivasEstruturaisComponent {
     }
   }
 
-  public onClickAddList() {
-    this.list.push({ nome: "Edson", idade: 50 });
+  public onClickAddList(nome: string, idade: number) {
+    this.list.push({ nome: nome, idade: idade });
   }
 
   public onClickEventList(event: number) {
