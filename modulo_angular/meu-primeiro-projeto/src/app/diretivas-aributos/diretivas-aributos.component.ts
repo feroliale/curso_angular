@@ -11,6 +11,9 @@ export class DiretivasAributosComponent {
     public size: string = "20px";
     public backgroundColor: string = "blue";
 
+    public nome: string = "";
+    public list: Array<{ nome: string }> = [];
+
     ngOnInit() {
         setInterval(() => {
             if (this.valor) {
@@ -27,7 +30,22 @@ export class DiretivasAributosComponent {
                 this.backgroundColor = "blue";
             }
         }, 2000);
-
-
     };
+
+    public salvar() {
+        this.list.push({ nome: this.nome });
+        this.nome = "";
+    }
+
+    public inverter() {
+        let word = this.nome.toLocaleLowerCase();
+        let result = "";
+
+        for (let index = word.length - 1; index >= 0; index--) {
+            result += word[index];
+        }
+
+        this.list.push({ nome: result });
+        this.nome = "";
+    }
 }

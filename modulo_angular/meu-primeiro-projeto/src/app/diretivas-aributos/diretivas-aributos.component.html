@@ -1,2 +1,29 @@
-<p [ngClass]="{'active':valor, 'disabled': !valor}" class="p-base">Teste de ngClass</p>
-<p [ngStyle]="{'height': size, 'background': backgroundColor}" class="p-base">ngClass</p>
+<ng-content select="h1"></ng-content>
+
+<div *ngIf="nome != 'João'">
+    <p [ngClass]="{'active':valor, 'disabled': !valor}" class="p-base">Teste de ngClass</p>
+    <p [ngStyle]="{'height': size, 'background': backgroundColor}" class="p-base">ngClass</p>
+</div>
+
+<hr />
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+<button (click)="inverter()">Inverter</button>
+
+<li *ngFor="let item of list">{{item.nome}}</li>
+
+<hr />
+
+<ng-template ngFor let-item [ngForOf]="list">
+
+    <p>{{item.nome}}</p>
+
+</ng-template>
+
+<input [(ngModel)]="nome">
+<button (click)="salvar()">Salvar</button>
+
+<hr />
+
+<ng-content select="h3"></ng-content>
