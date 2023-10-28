@@ -14,6 +14,8 @@ export class DiretivasAributosComponent {
     public nome: string = "";
     public list: Array<{ nome: string }> = [];
 
+    public date: Date = new Date();
+
     ngOnInit() {
         setInterval(() => {
             if (this.valor) {
