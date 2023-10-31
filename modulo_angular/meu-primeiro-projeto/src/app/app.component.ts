@@ -17,7 +17,7 @@ import { Component } from '@angular/core';
     </app-diretivas-aributos> -->
     
     <router-outlet></router-outlet>
-    <app-diretivas-aributos></app-diretivas-aributos>
+    <app-new-component></app-new-component>
   `
 })
 export class AppComponent {
