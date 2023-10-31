@@ -15,11 +15,29 @@ import { Component } from '@angular/core';
       <h1>Cópia de diretiva</h1>
       <h3>Final da cópia</h3>
     </app-diretivas-aributos> -->
+
+    <!-- <app-new-component></app-new-component> -->
     
+    <!-- <app-input [contador]="addValue"></app-input>
+    <br>
+    <button (click)="add()">Add</button> -->
+
+    <app-output></app-output>
+
     <router-outlet></router-outlet>
-    <app-new-component></app-new-component>
   `
 })
-export class AppComponent {
 
+export class AppComponent {
+  public destruir: boolean = true;
+
+  public addValue: number = 0;
+
+  public add() {
+    this.addValue += 1;
+  }
+
+  public destruirComponent() {
+    this.destruir = false;
+  }
 }
